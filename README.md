@@ -54,3 +54,5 @@ Pour toute question ou commentaire sur ce projet, veuillez nous contacter à l'a
 
 - Nom : De Miranda Alexandre
 - Email : alexandre.dmlpro@gmail.com
+- Nom : Yassine Laghrabli
+- Email : yassine.laghrabli@hotmail.com
