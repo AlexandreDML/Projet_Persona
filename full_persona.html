@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="src/style_etoile.css">
+  <!--FONT AWESOME--------------------------------------------------------------->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 <body>
   <div class="bg-white">
@@ -40,7 +43,6 @@
           </div>
         </div>
         
-        
         <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
           <div class="px-6 py-3 dark:text-neutral-50">
             <h5 class="mb-2 text-xl text-center font-medium leading-tight text-neutral-800 dark:text-neutral-50">profil</h5>
@@ -60,8 +62,7 @@
                 Sophie est ouverte aux nouvelles solutions de mobilité et aux initiatives favorisant le développement durable. Elle est prête à participer à des programmes de sensibilisation et d'incitation à l'utilisation des transports en commun et des modes actifs. Cependant, elle peut parfois être frustrée par les problèmes de stationnement et les infrastructures insuffisantes pour les cyclistes.
               </p>
             </div>
-          </div>
-
+        </div>
 
         <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
           <div class=" px-6 py-3 dark:text-neutral-50"><h5 class="mb-2 text-xl text-center font-medium leading-tight text-neutral-800 dark:text-neutral-50">Scénario</h5></div>
@@ -76,7 +77,45 @@
           </div>
         </div>
       </div>
-     </div>
+      
+      <div class="flex flex-wrap isolate px-6 pt-14 lg:px-8">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+          <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+        <div class="grid grid-cols-3 gap-3">
+          <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div class="p-6">
+              <h3>Cliquez sur une étoile pour donner une note</h3>
+              <div class="stars">
+                <i class="star stargrey fas fa-star" data-index="0"></i>
+                <i class="star stargrey fas fa-star" data-index="1"></i>
+                <i class="star stargrey fas fa-star" data-index="2"></i>
+                <i class="star stargrey fas fa-star" data-index="3"></i>
+                <i class="star stargrey fas fa-star" data-index="4"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div class="px-6 py-3 dark:text-neutral-50">
+              <h5 class="mb-2 text-xl text-center font-medium leading-tight text-neutral-800 dark:text-neutral-50">Commentaire</h5>
+            </div>
+              <div class="p-6">
+                <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                  <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Laisser un commentaire sur ce persona </label>
+                  <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Expliquez nous votre note..."></textarea>
+                </p>
+                <div class="mt-10 flex items-center justify-center gap-x-6">
+                  <a href="#" class="rounded-md bg-chatGPT px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Envoyer</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="src/script_etoile.js"></script>
 </body>
 </html>
