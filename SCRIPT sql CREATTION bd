@@ -1,0 +1,65 @@
+
+CREATE TABLE Menage(
+ ZoneFM int not NULL,
+ IdEchM int NOT NULL,
+ CP varchar(7) NULL,
+ Type_Logement varchar(30) NOT NULL,
+ PRIMARY KEY (ZoneFM, IdEchM)
+ );
+
+CREATE TABLE Personne(
+ ZoneFP int not NULL,
+ IDPe int NOT NULL,
+ IdEchP int NOT NULL,
+ Age int NOT NULL,
+ Permis varchar(3),
+ Telephone varchar(3),
+ Mail varchar(3),
+ Diplome varchar(30),
+ Situation_Pro varchar(200),
+ Abo_Transport varchar(3),
+ Distance_Travail float,
+ Vehicule varchar(3),
+ IDM int NOT NULL,
+ PRIMARY KEY (IDPe,IdEchP,ZoneFP),
+ FOREIGN KEY (IdEchP) REFERENCES Menage(IdEchM)
+ FOREIGN KEY (ZoneFP) REFERENCES Menage(ZoneFM)
+ );
+
+CREATE TABLE Prompts(
+ IDPr int AUTO_INCREMENT,
+ Version_Pr varchar(10) NOT NULL,
+ Text_Pr text,
+ PRIMARY KEY(IDPr)
+ );
+
+CREATE TABLE Associer(
+ IDPe int NOT NULL,
+ IDM int NOT NULL,
+ IDPr int NOT NULL,
+ FOREIGN KEY (IDPe) REFERENCES Personne(IDPe),
+ FOREIGN KEY (IDM) REFERENCES Menage(IDM),
+ FOREIGN KEY (IDPr) REFERENCES Prompts(IDPr),
+ PRIMARY KEY (IDPe,IDM,IDPr)
+ );
+
+CREATE TABLE Resultat(
+ IDR int AUTO_INCREMENT,
+ Description_Ph text NOT NULL,
+ Scenario text NOT NULL,
+ Note int,
+ IDPr int NOT NULL,
+ PRIMARY KEY (IDR),
+ FOREIGN KEY (IDPr) REFERENCES Prompts(IDPr)
+ );
+
+CREATE TABLE Visualisation(
+ IDV int AUTO_INCREMENT,
+ Image mediumblob NULL,
+ IDR int NOT NULL,
+ PRIMARY KEY (IDV),
+ FOREIGN KEY (IDR) REFERENCES Resultat(IDR)
+ );
+
+
+ 
