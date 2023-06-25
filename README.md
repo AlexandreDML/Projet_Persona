@@ -11,13 +11,21 @@ Pour installer et exécuter ce projet, suivez les étapes suivantes :
 1. Clonez ce référentiel GitHub sur votre machine locale.
 2. Assurez-vous d'avoir les dépendances nécessaires installées (liste des dépendances et versions recommandées).
 
+## Installation de tailwind
+
+Pour pouvoir avoir accès au visuel et utiliser le site web, il faut au préalable réaliser ces étapes :
+
+1. Installez tailwaind sur votre PC avec la commande suivante: **npm install -D tailwindcss**
+2. Ensuite vous devrez initialiser taiwind : **npx tailwindcss init**; cette commande va créer dans votre fichier les fichiers css et deconfiguration
+3. Exécutez la commande suivante pour générer un fichier CSS optimisé en utilisant le fichier CSS source tout en prenant les éventuels modification apporté à celui-ci : **npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch**
+
 ## Utilisation
 
 Pour utiliser ce générateur de personas, suivez les étapes suivantes :
 
 1. Préparez les données à utiliser pour générer votre persona.
-2. Modifier les prompts en fonction de vos besoin et de vos données.
-3. Éxécuter le script 
+2. Modifiez les prompts en fonction de vos besoin et de vos données.
+3. Éxécutez le script 
 4. Les personas générés seront enregistrés dans une base de données.
 
 ## Fonctionnalités principales
