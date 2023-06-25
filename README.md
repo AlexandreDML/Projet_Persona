@@ -16,7 +16,7 @@ Pour installer et exécuter ce projet, suivez les étapes suivantes :
 Pour pouvoir avoir accès au visuel et utiliser le site web, il faut au préalable réaliser ces étapes :
 
 1. Installez tailwaind sur votre PC avec la commande suivante: **npm install -D tailwindcss**
-2. Ensuite vous devrez initialiser taiwind : **npx tailwindcss init**; cette commande va créer dans votre fichier les fichiers css et deconfiguration
+2. Ensuite vous devrez initialiser tailwind : **npx tailwindcss init**; cette commande va créer dans votre dossier les fichiers css et de configuration (cette étapes n'est pas à faire si vous avez copier l'intégralité du repertoire car vous aurez déjà les fichiers et vous risquez de les écraser)
 3. Exécutez la commande suivante pour générer un fichier CSS optimisé en utilisant le fichier CSS source tout en prenant les éventuels modification apporté à celui-ci : **npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch**
 
 ## Utilisation
